@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0a23;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    background: #080841;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: #fff;
+    margin-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #166c8b;
+}
+
+.header-content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.header-content h1,
+.header-content h2 {
+    margin: 10px 0;
+}
+
+.header-content button {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.about {
+    display: flex;
+    padding: 50px 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.about img {
+    border-radius: 50%;
+    width: 200px;
+    height: 240px;
+    margin-right: 20px;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+.about-text button {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.about-text a {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.portfolio {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    background: #1a1a3d;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project h3 {
+    margin: 20px 0 10px;
+}
+
+.project p {
+    margin-bottom: 10px;
+}
+
+.project a {
+    text-decoration: none;
+    color: #6a11cb;
+}
+
+.portfolio button {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.services {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service {
+    background: #1a1a3d;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+}
+
+.service h3 {
+    margin-bottom: 10px;
+}
+
+.experience {
+    background-color: #655151;
+    padding: 50px;
+    text-align: center;
+}
+
+.experience h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #e6d9d9;
+}
+
+.experience-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.experience-item {
+    background: #f4f4f4;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 1rem;
+    color: #555;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: scale(1.1);
+    background-color: #0073e6;
+    color: #fff;
+}
+
+.experience-list .experience-item {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.experience-list .experience-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.experience-list .experience-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.experience-list .experience-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.experience-list .experience-item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.experience-list .experience-item:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.experience-list .experience-item:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.experience-list .experience-item:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.experience-list .experience-item:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+.contact {
+    background-color: #0a0a23;
+    padding: 50px;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #d9cccc;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.contact-info a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: blue;
+}
+
+form {
+    background: #1a1a3d;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0a0a23;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #fff;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #2b3493;
+    margin: 0 10px;
+}
